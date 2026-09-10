@@ -1,0 +1,48 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #faf6f1; color: #2c2320; font-family: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 17px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+a { color: #2f6f6a; text-decoration: none; }
+a:hover { color: #204f4b; }
+h1, h2, h3 { margin: 0; font-family: "Newsreader", Georgia, "Times New Roman", serif; font-weight: 500; letter-spacing: -0.01em; text-wrap: pretty; }
+p { margin: 0; text-wrap: pretty; }
+.wrap { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 40px; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8a7a6b; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 22px; border-radius: 14px; font-weight: 600; font-size: 16px; white-space: nowrap; }
+.btn-primary { background: #2f6f6a; color: #ffffff; }
+.btn-primary:hover { background: #204f4b; color: #ffffff; }
+.btn-secondary { background: #ffffff; color: #2f6f6a; border: 1px solid rgba(58,45,35,0.12); }
+.card { background: #ffffff; border: 1px solid rgba(58,45,35,0.12); border-radius: 16px; padding: 24px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.chip-accent { background: #d8e8e4; color: #2f6f6a; }
+.chip-warn { background: #f4e9d2; color: #9d6c22; }
+.chip-success { background: #e6ecdd; color: #5d7a4f; }
+.banner { display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; border-radius: 14px; font-size: 14px; line-height: 1.45; }
+.banner-solid { background: #1f3a2e; color: #eaf1ec; }
+.banner-tint { background: #d8e8e4; color: #2f6f6a; }
+.icon-tile { width: 44px; height: 44px; border-radius: 12px; background: #d8e8e4; color: #2f6f6a; display: flex; align-items: center; justify-content: center; flex: none; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 56px; align-items: center; }
+.split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: start; }
+.nav-links { display: flex; gap: 28px; align-items: center; font-size: 15px; font-weight: 500; color: #2c2320; }
+.hl { background: linear-gradient(transparent 55%, #f0d59a 55%, #f0d59a 92%, transparent 92%); padding: 0 2px; }
+.phone { width: 330px; border-radius: 44px; background: #10201d; padding: 12px; box-shadow: 0 30px 60px -30px rgba(44,35,32,0.45), 0 0 0 1px rgba(255,255,255,0.06) inset; }
+.screen { background: #faf6f1; border-radius: 34px; padding: 48px 16px 24px; display: flex; flex-direction: column; gap: 12px; min-height: 640px; }
+.appcard { background: #ffffff; border: 1px solid rgba(58,45,35,0.12); border-radius: 16px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+.apphead { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #8a7a6b; }
+.row { display: flex; justify-content: space-between; align-items: center; font-size: 13px; gap: 8px; }
+.fine { font-size: 14px; color: #8a7a6b; }
+.footer-links { display: flex; gap: 24px; flex-wrap: wrap; font-size: 14px; }
+.lang { display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border-radius: 999px; background: #ffffff; border: 1px solid rgba(58,45,35,0.12); font-size: 15px; font-weight: 500; }
+@media (max-width: 900px) {
+  .wrap { padding: 0 20px; }
+  .hero-grid, .split, .grid-2, .grid-3, .grid-4 { grid-template-columns: minmax(0, 1fr); }
+  .hero-grid { gap: 40px; }
+  .nav-links { display: none; }
+  .phone { width: 300px; }
+  .hero-title { font-size: 44px !important; }
+  .section-title { font-size: 34px !important; }
+  .hero-actions { flex-direction: column; align-items: stretch !important; }
+  .hero-actions .btn { width: 100%; }
+}
+  
